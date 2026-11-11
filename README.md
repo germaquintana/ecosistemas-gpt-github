@@ -8,6 +8,10 @@
 
 **[1. Entiende el sistema en 5 minutos](COMENZAR_AQUI.md)** · **[2. Consulta las prácticas y configuraciones](CONFIGURACIONES_Y_COMPROMISOS.md)** · **[3. Pide a ChatGPT un resumen esquemático y personalizado](PROMPT_PARA_CHATGPT.md)**
 
+### ¿Quieres compartir esto con otra persona?
+
+Envía el enlace [**Mensaje para compartir**](MENSAJE_PARA_COMPARTIR.md), o directamente el URL de este repositorio. Para obtener una **respuesta esquemática en ChatGPT** —arquitectura, prácticas, configuraciones recomendadas, componentes opcionales, riesgos y pasos de adopción— tu colega debe abrir [**PROMPT_PARA_CHATGPT.md**](PROMPT_PARA_CHATGPT.md), copiar el texto y pegarlo en su propia conversación de ChatGPT. El enlace por sí solo no ejecuta un asistente ni instala prácticas.
+
 ### Arquitectura en una mirada
 
 ```mermaid
