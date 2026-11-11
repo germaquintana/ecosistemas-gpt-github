@@ -1,0 +1,21 @@
+{
+  "title": "Ecosistemas GPT + GitHub + herramientas complementarias",
+  "repository": "germaquintana/ecosistemas-gpt-github",
+  "version": "1.0.0",
+  "updated_chile": "2026-11-11",
+  "language": "es-CL",
+  "status": "publicado_documentacion_educativa",
+  "landing_page": "README.md",
+  "onboarding": "COMENZAR_AQUI.md",
+  "configuration_disclosure": "CONFIGURACIONES_Y_COMPROMISOS.md",
+  "chatgpt_instruction": "PROMPT_PARA_CHATGPT.md",
+  "example_response": "EJEMPLO_RESPUESTA_ESQUEMATICA.md",
+  "template_path": "plantilla-proyecto/",
+  "license_status": "pendiente_decision_titular",
+  "automatic_installation": false,
+  "account_connection_by_link": false,
+  "permissions_granted_by_link": false,
+  "private_project_contents_included": false,
+  "requires_owner_review_of_contributions": true,
+  "disclaimer": "Biblioteca pedagógica; no constituye política institucional ni conexión técnica activa."
+}
