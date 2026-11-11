@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "description": "Ejemplo: no son conexiones activas ni permisos concedidos",
+  "default_permissions": "ninguno; cada complemento requiere autorización",
+  "modules": [
+    {
+      "id": "github",
+      "type": "repositorio_propio",
+      "status": "por_configurar",
+      "authority": "estado y versiones propias"
+    },
+    {
+      "id": "documentos",
+      "type": "Drive u otro almacenamiento",
+      "status": "opcional_no_conectado",
+      "authority": "originales según custodio"
+    },
+    {
+      "id": "comunicaciones",
+      "type": "Gmail u otro correo",
+      "status": "opcional_no_conectado",
+      "authority": "correos recibidos/enviados"
+    },
+    {
+      "id": "tareas",
+      "type": "Trello u otro",
+      "status": "opcional_no_conectado",
+      "authority": "seguimiento complementario"
+    }
+  ],
+  "no_cross_system_writes": true,
+  "no_automatic_publication": true
+}
