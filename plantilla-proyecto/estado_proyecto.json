@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "project": "Mi proyecto de ejemplo",
+  "phase": "inicio_pendiente_validacion",
+  "status": "propuesto",
+  "owner": "por_definir",
+  "source_of_truth": "este repositorio para estado; fuentes originales fuera según permisos",
+  "next_action": "Definir responsable, objetivo verificable y primera tarea con revisión humana",
+  "last_verified_run": null,
+  "run_lock": {
+    "active": false,
+    "owner": null,
+    "run_id": null
+  },
+  "privacy_policy": "datos ficticios; no introducir secretos ni datos personales",
+  "connected_modules": [],
+  "public_distribution_authorized": false,
+  "automated_actions_authorized": false
+}
