@@ -1,19 +1,34 @@
-# Mensaje breve para compartir esta biblioteca
+# Mensaje para compartir con un colega
 
-Copia y adapta este texto a tu destinatario. No se envía ningún mensaje automáticamente.
+Este repositorio público permite **aprender** o **implementar** un ecosistema personal GPT + GitHub. Compartirlo no crea cuentas, instala asistentes ni conecta aplicaciones.
 
-> Te comparto una biblioteca abierta de buenas prácticas para construir tu propio sistema de trabajo con ChatGPT, GitHub y complementos opcionales como Drive, Gmail, Trello o Calendar.
+## Opción recomendada: que lo implemente desde su ChatGPT
+
+Envíale este mensaje (por WhatsApp, correo o cualquier medio; no se envía automáticamente):
+
+> Te comparto una guía abierta para construir tu propio ecosistema de trabajo con ChatGPT, GitHub y herramientas opcionales. Abre tu ChatGPT y pega este mensaje:
 >
-> **Repositorio:** https://github.com/germaquintana/ecosistemas-gpt-github
+> **Implementa en mi propio entorno, paso a paso y con mi autorización para cada cambio, el sistema descrito aquí: https://github.com/germaquintana/ecosistemas-gpt-github/blob/main/IMPLEMENTAR_CON_CHATGPT.md . Comienza por mostrarme un esquema y preguntarme qué proyecto quiero gestionar. Después lee la guía y ejecuta sus fases con las herramientas disponibles, sin inventar éxitos ni conectar cuentas sin consentimiento.**
 >
-> Para entender qué prácticas y configuraciones propone adoptar, abre el archivo **COMENZAR_AQUI.md**. También puedes copiar el prompt de **PROMPT_PARA_CHATGPT.md** en ChatGPT y pedir un esquema de arquitectura, buenas prácticas, niveles de configuración, riesgos y primeros pasos.
->
-> La guía no instala nada ni conecta tus cuentas. Tú decides qué herramientas utilizar, qué permisos conceder y qué decisiones reservar a personas.
+> Cuando ChatGPT te pida conectar GitHub, podrás hacerlo desde las opciones de tu propia cuenta. Si no dispone de capacidad para crear repositorios, te indicará cómo crear uno vacío y continuará con la configuración después de que le entregues el enlace.
 
-## Enlaces directos
+### ¿Qué debería ocurrir?
 
-- [Portada](README.md)
-- [Guía de cinco minutos](COMENZAR_AQUI.md)
-- [Configuraciones y compromisos](CONFIGURACIONES_Y_COMPROMISOS.md)
-- [Prompt para ChatGPT](PROMPT_PARA_CHATGPT.md)
-- [Ejemplo esquemático de respuesta](EJEMPLO_RESPUESTA_ESQUEMATICA.md)
+1. Su ChatGPT lee la guía y explica qué prácticas adoptaría.
+2. Le pregunta qué proyecto quiere organizar y comprueba si ya tiene repositorio GitHub.
+3. El colega autoriza expresamente el repositorio donde desea trabajar; conecta su propia cuenta si la herramienta lo requiere.
+4. ChatGPT crea o adapta instrucciones, estado, tareas y bitácora cuando tenga las herramientas y permisos necesarios, y verifica cada escritura.
+5. Los complementos como Drive, correo, calendario y automatizaciones se consideran **después**, según necesidades y autorizaciones.
+
+## Si primero quiere entender el modelo
+
+Envíale la [guía de inicio](COMENZAR_AQUI.md) y el [prompt de explicación sin cambios](PROMPT_PARA_CHATGPT.md). No confundas esta opción con implementación.
+
+## Enlaces útiles
+
+- [Repositorio público](README.md)
+- [Implementación guiada](IMPLEMENTAR_CON_CHATGPT.md)
+- [Prácticas y configuraciones](CONFIGURACIONES_Y_COMPROMISOS.md)
+- [Plantilla de proyecto](plantilla-proyecto/README.md)
+
+**Límite importante:** no es técnicamente posible que el simple acto de pegar una URL ejecute permisos o acciones por sí solo. Debe formular una instrucción, disponer de herramientas y aprobar los cambios pertinentes.
