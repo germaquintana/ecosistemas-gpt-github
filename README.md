@@ -2,7 +2,18 @@
 
 **Aprende a organizar proyectos con un asistente de IA, GitHub y herramientas complementarias, de forma segura, verificable y adaptable.**
 
-> Guía educativa de adopción voluntaria, versión 1.0 (11-11-2026). **Leer esta página no instala nada, no conecta cuentas ni concede permisos.** No es una política oficial de una institución, de OpenAI ni de GitHub.
+> Guía educativa de adopción voluntaria, versión 1.1 (actualización 13-11-2026). **Leer esta página no instala nada, no conecta cuentas ni concede permisos.** No es una política oficial de una institución, de OpenAI ni de GitHub.
+
+## Novedades del 13/11/2026 — versión 1.1
+
+La [actualización metodológica del 13 de noviembre](ACTUALIZACION_2026-11-13.md) recoge criterios para trabajar **con menos pasos y más continuidad**:
+
+- **Comentarios normales o casillas de checklist** como señales humanas independientes, cuando se haya configurado y probado una integración. No exigir comandos como `IA:` ni una doble confirmación para cada revisión.
+- **Esperas humanas no bloqueantes:** conservar pendientes de firma, aprobación o respuesta en la tarea correspondiente; seguir con otra tarea automática elegible.
+- **Bloqueos técnicos breves y recuperación prudente:** distinguir el estado de una tarea del bloqueo temporal de escritura; nunca liberar un lock ajeno solo por su antigüedad.
+- **Idempotencia y evidencia:** registrar eventos por ID, comprobar lo escrito y diferenciar configuración de funcionamiento real.
+
+**¿Ya tienes un ecosistema?** Abre esa actualización y copia el mensaje «Cómo adaptar estas reglas a tu propio sistema». No necesitas empezar desde cero ni copiar configuraciones del autor.
 
 ## Implementar tu propio ecosistema directamente desde ChatGPT
 
