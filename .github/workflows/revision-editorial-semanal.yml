@@ -1,0 +1,29 @@
+name: Revision editorial semanal de la guia publica
+
+on:
+  schedule:
+    - cron: '17 9 * * 1'
+      timezone: America/Santiago
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: revision-editorial-semanal
+  cancel-in-progress: false
+
+jobs:
+  revision:
+    name: Control de versiones, enlaces e issues (sin publicar)
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Leer version vigente
+        uses: actions/checkout@v4
+      - name: Revisar consistencia sin modificar archivos
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 scripts/revision_editorial.py
