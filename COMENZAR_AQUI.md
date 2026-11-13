@@ -50,6 +50,10 @@ Una tarea que depende de una persona **espera en su expediente**; las demás tar
 
 Elige un proyecto pequeño, como organizar materiales de una actividad. Define un entregable que puedas revisar, crea un repositorio privado, conserva allí las instrucciones y el estado, y realiza una sola tarea. Después comprueba y documenta el resultado.
 
+## Mejora continua, sin sobrecargar tu trabajo
+
+Cuando ya tengas un proyecto funcionando, puedes revisar una vez por semana [nuevas versiones](VERSION.json) y [novedades](CHANGELOG.md). Si te conviene automatizarlo, utiliza el [mecanismo semanal optativo](docs/MEJORA_CONTINUA_SEMANAL.md): detecta y propone, pero no aplica cambios sin tu aprobación. No necesitas añadir otro tablero o nuevas tareas cada semana si no hubo cambios.
+
 ## 5. Pide una explicación adaptada a ti
 
 Abre [PROMPT_PARA_CHATGPT.md](PROMPT_PARA_CHATGPT.md). Copia el texto y pégalo en ChatGPT junto a la URL de esta biblioteca. Recibirás un mapa, tabla de prácticas y configuración de inicio. **La IA deberá leer el repositorio en vivo** y declarar cualquier archivo inaccesible, en vez de inventar contenidos.
