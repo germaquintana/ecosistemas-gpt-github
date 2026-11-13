@@ -1,0 +1,89 @@
+# EJEMPLO OPTATIVO. No se ejecuta desde esta ruta.
+# Un colega debe revisar el código y copiarlo a .github/workflows/ de SU repositorio.
+# Versión demostrativa 13/11/2026. No aplica actualizaciones automáticamente.
+name: Revisar semanalmente novedades de ecosistemas GPT GitHub
+
+on:
+  schedule:
+    - cron: '23 9 * * 1'
+      timezone: America/Santiago
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: revisar-novedades-guia
+  cancel-in-progress: false
+
+jobs:
+  comparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comparar versión y proponer revisión sin aplicar cambios
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import pathlib
+          import re
+          import subprocess
+          import urllib.request
+
+          local = pathlib.Path("version_guia_adoptada.json")
+          if not local.is_file():
+              raise SystemExit("Falta version_guia_adoptada.json: primero configura tu propia adopción.")
+          with local.open(encoding="utf-8") as stream:
+              installed = json.load(stream)
+          if installed.get("adopcion_confirmada") is not True:
+              print("Adopción no confirmada: no se crea una Issue. Revisar el estado local.")
+              raise SystemExit(0)
+          adopted = str(installed.get("version_adoptada") or "")
+          if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", adopted):
+              raise SystemExit("Versión adoptada inválida: usar X.Y.Z")
+          url = "https://raw.githubusercontent.com/germaquintana/ecosistemas-gpt-github/main/VERSION.json"
+          request = urllib.request.Request(url, headers={"User-Agent": "revision-semanal-ecosistemas"})
+          with urllib.request.urlopen(request, timeout=20) as response:
+              published = json.load(response)
+          release = published["release"]
+          newest = str(release["version"])
+          if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", newest):
+              raise SystemExit("Manifiesto público inválido; no registrar novedades")
+          if newest == adopted:
+              print("Sin novedades: versión adoptada coincide. No se crea Issue.")
+              raise SystemExit(0)
+          print(f"Versiones distintas: adoptada={adopted}; pública={newest}.")
+          title = f"[Guía ecosistemas] Revisar versión {newest}"
+          result = subprocess.run(
+              ["gh", "issue", "list", "--repo", os.environ["GH_REPO"],
+               "--state", "open", "--limit", "100", "--json", "title"],
+              capture_output=True, text=True, check=True,
+          )
+          existing = json.loads(result.stdout)
+          if any(item.get("title") == title for item in existing):
+              print("Ya hay una Issue abierta para esta versión; no duplicar.")
+              raise SystemExit(0)
+          body = (
+              f"Se detectó una versión distinta de la guía educativa pública.\n\n"
+              f"- Versión adoptada en este proyecto: `{adopted}`\n"
+              f"- Versión publicada: `{newest}`\n"
+              "- Novedades: https://github.com/germaquintana/ecosistemas-gpt-github/blob/main/CHANGELOG.md\n"
+              "- Guía de revisión: https://github.com/germaquintana/ecosistemas-gpt-github/blob/main/docs/MEJORA_CONTINUA_SEMANAL.md\n\n"
+              "**Pendiente humano:** comparar cambios, decidir adopción, revisar permisos, probar, "
+              "registrar RUN y recién entonces modificar `version_guia_adoptada.json`. "
+              "Este aviso no aplica cambios ni autoriza actos reservados."
+          )
+          subprocess.run(
+              ["gh", "issue", "create", "--repo", os.environ["GH_REPO"],
+               "--title", title, "--body", body],
+              check=True,
+          )
+          print("Issue de revisión creada; ninguna actualización aplicada.")
+          PY
