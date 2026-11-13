@@ -38,6 +38,14 @@ Son **compromisos voluntarios de trabajo**, no una relación contractual con el 
 - **Solo con autorización:** conectores a correo, calendarios, datos institucionales, automatizaciones, escrituras externas y publicación.
 - **Nunca de forma automática por abrir el enlace:** ninguna aplicación obtiene acceso; no se crean tareas, correos ni calendarios; no se instalan extensiones.
 
+## Novedad 13/11/2026: interacción sencilla y continuidad
+
+Si usas una bandeja humana opcional (Trello, Issues u otra), evita exigir tanto un comentario como una marca de checklist: **cualquiera de las dos acciones puede bastar**, según su significado. No impongas códigos especiales como `IA:` si la integración puede interpretar lenguaje normal. Una casilla marcada acredita solo el hecho descrito; no sustituye autorizaciones de actos formales.
+
+Una tarea que depende de una persona **espera en su expediente**; las demás tareas que sí son seguras y ejecutables pueden avanzar. El bloqueo técnico del repositorio protege escrituras breves, no debe sostenerse por una respuesta humana pendiente. Los bloqueos ajenos no se liberan sin investigación y control.
+
+[Lee la actualización del 13/11/2026 y adapta tu sistema existente](ACTUALIZACION_2026-11-13.md). Su aplicación requiere permisos y pruebas reales.
+
 ## 4. Tu primera práctica
 
 Elige un proyecto pequeño, como organizar materiales de una actividad. Define un entregable que puedas revisar, crea un repositorio privado, conserva allí las instrucciones y el estado, y realiza una sola tarea. Después comprueba y documenta el resultado.
