@@ -1,5 +1,19 @@
 # Historial de actualizaciones
 
+## 1.2.0 — 13/11/2026
+
+**Tipo:** mecanismo permanente y optativo de mejora continua, sin intervención en cuentas de terceros.
+
+- Nuevo manifiesto público [VERSION.json](VERSION.json) para consultar la versión vigente.
+- [Actualización v1.2](ACTUALIZACION_2026-11-13_MEJORA_CONTINUA.md): revisión semanal del origen y consumo seguro de novedades por colegas.
+- [Procedimiento semanal](docs/MEJORA_CONTINUA_SEMANAL.md): ciclo editorial, responsabilidades y criterios de aceptación.
+- Workflow [revision-editorial-semanal.yml](.github/workflows/revision-editorial-semanal.yml) con control solo de lectura, lunes 09:17 America/Santiago, sin publicar automáticamente.
+- [Plantilla de revisión semanal para colegas](plantilla-proyecto/REVISION_SEMANAL_GUIA.md), ejemplo de workflow y marcador de versión adoptada; habilitación voluntaria, sin instalación al visitar la guía.
+- Diferencia entre versión publicada, propuesta de adopción y versión implementada y probada.
+
+**Verificación:** archivos/versiones guardados y releídos; el primer disparo automático real del workflow y su funcionamiento en instalaciones de colegas **siguen pendientes**. No se modificaron licencias, permisos ni estados de repositorios ajenos.
+
+
 ## 1.1 — 13/11/2026
 
 **Tipo:** actualización metodológica para colegas que ya utilizan o quieren implementar su propio ecosistema GPT + GitHub.
