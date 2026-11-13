@@ -20,6 +20,10 @@ Envíale este mensaje (por WhatsApp, correo o cualquier medio; no se envía auto
 4. ChatGPT crea o adapta instrucciones, estado, tareas y bitácora cuando tenga las herramientas y permisos necesarios, y verifica cada escritura.
 5. Los complementos como Drive, correo, calendario y automatizaciones se consideran **después**, según necesidades y autorizaciones.
 
+## Si tu colega ya tiene un ecosistema
+
+No hace falta instalar uno nuevo. Comparte la [actualización 13/11/2026](ACTUALIZACION_2026-11-13.md): contiene criterios de interacción humana simple, continuidad de trabajo y una instrucción lista para que ChatGPT revise y actualice **su propio sistema**, con permisos y pruebas. No modifica automáticamente ninguna cuenta.
+
 ## Si primero quiere entender el modelo
 
 Envíale la [guía de inicio](COMENZAR_AQUI.md) y el [prompt de explicación sin cambios](PROMPT_PARA_CHATGPT.md). No confundas esta opción con implementación.
