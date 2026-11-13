@@ -23,6 +23,18 @@ No copies información privada del autor de esta guía. No hagas cambios en cuen
 Quiero que el proceso termine con un proyecto propio funcional, su README, AGENTS.md, estado recuperable, una primera tarea verificable, un registro de cambios y una explicación de cómo seguir usando el sistema.
 ```
 
+## Si ya tienes tu propio sistema: actualización del 13/11/2026
+
+**No lo reconstruyas ni crees otro repositorio.** Consulta [ACTUALIZACION_2026-11-13.md](ACTUALIZACION_2026-11-13.md), que incluye un mensaje listo para copiar para:
+
+- aceptar comentarios normales **o** cambios de checklist como señales, cuando haya una integración autorizada;
+- dejar en espera una tarea que requiera decisión humana sin detener los demás trabajos;
+- distinguir `run_lock` técnico de la situación de una tarea y tratar bloqueos ajenos con prudencia;
+- aplicar control de versiones, IDs de evento e idempotencia;
+- probar el circuito realmente, sin declarar funcionamiento por el solo cambio de instrucciones.
+
+La adopción es opcional. Tu asistente debe leer los archivos vigentes y pedir autorización para modificar su destino, sin publicar datos privados ni reproducir configuraciones ajenas.
+
 ## 2. Qué debe hacer tu asistente, en orden
 
 ### Fase A — Explicar antes de actuar
