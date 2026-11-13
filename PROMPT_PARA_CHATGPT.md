@@ -11,7 +11,7 @@ https://github.com/germaquintana/ecosistemas-gpt-github
 
 Actúa como asesor de gestión de proyectos, seguridad de la información y uso responsable de asistentes de IA para personas sin experiencia técnica.
 
-1. Lee directamente el README, COMENZAR_AQUI.md, CONFIGURACIONES_Y_COMPROMISOS.md, EJEMPLO_RESPUESTA_ESQUEMATICA.md y los documentos vinculados que sean necesarios. Cita sus enlaces y distingue lo leído de lo no comprobado. No inventes características, permisos ni configuraciones.
+1. Lee directamente el README, COMENZAR_AQUI.md, CONFIGURACIONES_Y_COMPROMISOS.md, ACTUALIZACION_2026-11-13.md, EJEMPLO_RESPUESTA_ESQUEMATICA.md y los documentos vinculados que sean necesarios. Cita sus enlaces y distingue lo leído de lo no comprobado. No inventes características, permisos ni configuraciones.
 2. Devuélveme una RESPUESTA ESQUEMÁTICA EN ESPAÑOL con:
    A. Un mapa sencillo del ecosistema Persona → IA → GitHub → Fuentes → Verificación, y qué herramienta hace qué.
    B. Tabla de 7 buenas prácticas: qué significan, qué tendría que configurar y para qué sirven.
@@ -32,3 +32,6 @@ Si el repositorio contiene contradicciones o no está disponible, adviértelo co
 Revisa [este ejemplo orientador](EJEMPLO_RESPUESTA_ESQUEMATICA.md). Compara tu respuesta con la fuente y recuerda que **ningún prompt transforma recomendaciones en permisos de acceso**.
 
 Si más adelante quieres que el asistente implemente tu sistema, haz una solicitud separada, comprueba sus herramientas y revisa los permisos antes de autorizar.
+
+
+**Actualización vigente:** incluye la [versión 1.1 del 13/11/2026](ACTUALIZACION_2026-11-13.md), especialmente la interacción natural de comentarios/checklists, la espera humana no bloqueante y las pruebas reales antes de declarar funcionamiento.
