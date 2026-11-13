@@ -18,6 +18,24 @@
 | Autonomía programada | Requiere autorización | Alcance, frecuencia, límites, lock, logs | Ensayo y plan de reversión | ¿Qué acciones delego? |
 | Escritura y publicación | Requiere autorización | Revisión de datos, difusión y audiencia | Aprobación y evidencia | ¿Quién puede publicar? |
 
+## Mejora 13/11/2026 — decisiones simples, cola fluida y prueba real
+
+Estas configuraciones son **opcionales y adaptables**. No se activan al leer esta guía.
+
+| Criterio | Configuración recomendada | Evidencia de aceptación |
+|---|---|---|
+| Interacción humana | Comentario normal **o** checklist, sin prefijos ni doble requisito cuando haya una integración autorizada | El evento se captura con autor/ID y se refleja en una tarea existente |
+| Espera de aprobación | Estado `revision_humana`/`esperando` **solo en la tarea afectada** | Otra unidad automatizable produce un resultado mientras esa tarea espera |
+| Cola ejecutable | Prioridad y próxima acción separadas de decisiones humanas pendientes | No se repite cada hora el mismo control sin nueva señal |
+| Lock de escritura | Transacción breve, SHA/versión y liberación del lock propio | Antes y después comprobados, sin cambios ajenos |
+| Recuperación | Investigar locks posiblemente abandonados; no liberar por mera antigüedad | Propiedad, RUN y trazabilidad de la recuperación |
+| Idempotencia | ID estable del comentario, cambio de casilla, tarea y autor | Segunda lectura no duplica tareas ni efectos |
+| Estado de despliegue | Separar `documentado`, `configurado`, `probado`, `operativo verificado` | Prueba real de extremo a extremo y resultados constatados |
+
+**Una aprobación expresada en un comentario no ejecuta actos reservados.** Preparar un documento puede estar autorizado y enviarlo oficialmente no. Los comentarios de otras personas no son instrucciones del titular por defecto.
+
+Consulta [la actualización completa y el mensaje para adaptar un sistema existente](ACTUALIZACION_2026-11-13.md).
+
 ## Reglas no negociables de seguridad
 
 - Un repositorio **público** no es lugar para secretos, datos personales, expedientes ni borradores reservados.
