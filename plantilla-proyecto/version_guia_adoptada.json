@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "origin": "germaquintana/ecosistemas-gpt-github",
+  "version_adoptada": "1.1.0",
+  "adopcion_confirmada": false,
+  "fecha_adopcion": null,
+  "ultima_revision_con_evidencia": null,
+  "notas": "EJEMPLO: sustituir por la versión realmente aplicada tras revisión, permisos y pruebas. No equivale a instalación."
+}
