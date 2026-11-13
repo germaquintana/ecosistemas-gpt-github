@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project": "ecosistemas-gpt-github",
+  "release": {
+    "version": "1.1.0",
+    "published_on": "2026-11-13",
+    "title": "Interacción humana simple y continuidad sin bloqueo",
+    "status": "publicado",
+    "breaking_change": false,
+    "review_required": true
+  },
+  "documentation": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "release_notes": "ACTUALIZACION_2026-11-13.md",
+    "continuous_improvement": "docs/MEJORA_CONTINUA_SEMANAL.md"
+  },
+  "consumer_guidance": {
+    "automatic_detection_allowed": true,
+    "automatic_application_allowed": false,
+    "credentials_or_private_data_required": false,
+    "owner_authorization_required_for_changes": true
+  },
+  "provenance": "Guía pública formativa; no política institucional ni fuente de estado de proyectos de terceros"
+}
