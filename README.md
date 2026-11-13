@@ -56,7 +56,9 @@ flowchart TD
 | Calidad | Comprobar antes de declarar completado | Mejora fiabilidad |
 | Modularidad | Complementos opcionales; conectar y desconectar | Reduce complejidad |
 
-**No estás suscribiendo un servicio ni aceptando automáticamente ninguna configuración.** Adoptar una práctica exige decidirla y configurarla deliberadamente en *tu propio* proyecto.
+**No estás suscribiendo un servicio ni aceptando automáticamente ninguna configuración.**
+
+**Versión y novedades:** [Historial de actualizaciones](CHANGELOG.md) · [Actualización 13/11/2026](ACTUALIZACION_2026-11-13.md). Adoptar una práctica exige decidirla y configurarla deliberadamente en *tu propio* proyecto.
 
 ## Ruta de aprendizaje
 
