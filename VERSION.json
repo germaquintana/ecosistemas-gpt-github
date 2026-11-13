@@ -2,9 +2,9 @@
   "schema_version": 1,
   "project": "ecosistemas-gpt-github",
   "release": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "published_on": "2026-11-13",
-    "title": "Interacción humana simple y continuidad sin bloqueo",
+    "title": "Mejora continua semanal y seguimiento voluntario de actualizaciones",
     "status": "publicado",
     "breaking_change": false,
     "review_required": true
@@ -12,7 +12,7 @@
   "documentation": {
     "readme": "README.md",
     "changelog": "CHANGELOG.md",
-    "release_notes": "ACTUALIZACION_2026-11-13.md",
+    "release_notes": "ACTUALIZACION_2026-11-13_MEJORA_CONTINUA.md",
     "continuous_improvement": "docs/MEJORA_CONTINUA_SEMANAL.md"
   },
   "consumer_guidance": {
