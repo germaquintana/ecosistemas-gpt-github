@@ -2,7 +2,17 @@
 
 **Aprende a organizar proyectos con un asistente de IA, GitHub y herramientas complementarias, de forma segura, verificable y adaptable.**
 
-> Guía educativa de adopción voluntaria, versión 1.1 (actualización 13-11-2026). **Leer esta página no instala nada, no conecta cuentas ni concede permisos.** No es una política oficial de una institución, de OpenAI ni de GitHub.
+> Guía educativa de adopción voluntaria, versión 1.2 (actualización 13-11-2026). **Leer esta página no instala nada, no conecta cuentas ni concede permisos.** No es una política oficial de una institución, de OpenAI ni de GitHub.
+
+## Nueva versión 1.2 — 13/11/2026: mejora permanente
+
+El repositorio dispone ahora de una [guía de mejora continua semanal](docs/MEJORA_CONTINUA_SEMANAL.md) y un [manifiesto de versión](VERSION.json). Los colegas pueden **consultar semanalmente novedades y compararlas con la versión que realmente adoptaron**, sin reconstruir su proyecto ni aplicar cambios automáticamente.
+
+- **Repositorio de referencia:** [novedades de la v1.2](ACTUALIZACION_2026-11-13_MEJORA_CONTINUA.md) y [historial](CHANGELOG.md).
+- **Revisión semanal del origen:** control editorial estructural de GitHub Actions, programado para los lunes 09:17 hora de Santiago; su ejecución real debe comprobarse en [Actions](https://github.com/germaquintana/ecosistemas-gpt-github/actions).
+- **Para colegas que ya tienen proyecto:** [instalación optativa de la revisión semanal](plantilla-proyecto/REVISION_SEMANAL_GUIA.md). La verificación automática no modifica su sistema sin aprobación.
+
+**No hace falta configurar nada para seguir usando esta biblioteca manualmente.** Una nueva versión pública no concede permisos ni sustituye pruebas del sistema propio.
 
 ## Novedades del 13/11/2026 — versión 1.1
 
@@ -58,7 +68,7 @@ flowchart TD
 
 **No estás suscribiendo un servicio ni aceptando automáticamente ninguna configuración.**
 
-**Versión y novedades:** [Historial de actualizaciones](CHANGELOG.md) · [Actualización 13/11/2026](ACTUALIZACION_2026-11-13.md). Adoptar una práctica exige decidirla y configurarla deliberadamente en *tu propio* proyecto.
+**Versión y novedades:** [Historial](CHANGELOG.md) · [Mejora continua semanal v1.2](ACTUALIZACION_2026-11-13_MEJORA_CONTINUA.md) · [Criterios v1.1](ACTUALIZACION_2026-11-13.md). Adoptar una práctica exige decidirla y configurarla deliberadamente en *tu propio* proyecto.
 
 ## Ruta de aprendizaje
 
