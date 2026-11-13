@@ -23,6 +23,10 @@ No copies información privada del autor de esta guía. No hagas cambios en cuen
 Quiero que el proceso termine con un proyecto propio funcional, su README, AGENTS.md, estado recuperable, una primera tarea verificable, un registro de cambios y una explicación de cómo seguir usando el sistema.
 ```
 
+## Si quieres mantenerlo actualizado semanalmente
+
+Una vez instalado y verificado tu proyecto, considera la [guía opcional de revisión semanal](plantilla-proyecto/REVISION_SEMANAL_GUIA.md). Ofrece una revisión manual, una tarea recurrente configurada en tu propio asistente o un workflow de GitHub Actions que solo propone una Issue cuando hay diferencias de versión. Ninguna modalidad debe adoptarse sin verificar permisos; **nunca aplica cambios automáticamente**. La [versión pública vigente](VERSION.json) y [el historial](CHANGELOG.md) son la referencia.
+
 ## Si ya tienes tu propio sistema: actualización del 13/11/2026
 
 **No lo reconstruyas ni crees otro repositorio.** Consulta [ACTUALIZACION_2026-11-13.md](ACTUALIZACION_2026-11-13.md), que incluye un mensaje listo para copiar para:
