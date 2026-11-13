@@ -58,15 +58,15 @@ def main() -> int:
             read_text(relative)
     changelog = read_text("CHANGELOG.md")
     readme = read_text("README.md")
-    notes = read_text("ACTUALIZACION_2026-11-13.md")
+    notes = read_text(docs.get("release_notes") or "ACTUALIZACION_2026-11-13.md")
     # Una versión nueva debe actualizar el registro de cambios y la portada.
     major_minor = ".".join(version.split(".")[:2])
     if not re.search(r"^##\s+" + re.escape(major_minor) + r"\b", changelog, re.M):
         ERRORS.append(f"CHANGELOG no registra la versión {major_minor}")
     if not re.search(r"versión\s+" + re.escape(major_minor) + r"\b", readme, re.I):
         ERRORS.append(f"README no identifica la versión {major_minor}")
-    if "13/11/2026" not in notes:
-        WARNINGS.append("Notas originales 13/11/2026 no encontradas como se esperaba")
+    if version and ".".join(version.split(".")[:2]) not in notes:
+        WARNINGS.append("Las notas de publicación no mencionan la versión semántica vigente")
     read_text("plantilla-proyecto/REVISION_SEMANAL_GUIA.md")
     read_text("plantilla-proyecto/automatizaciones/revisar_novedades_semanal.yml")
     issues = "No consultadas (Issues deshabilitadas o token insuficiente)"
